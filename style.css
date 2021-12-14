@@ -1,6 +1,10 @@
-/* CSS Stylesheet */
+/* Global styles are subject to change */
 
-/* Global Styles: subject to change */
+* { /* Page Margin Defaults */
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
 
 body {
      /* Colors */
@@ -12,3 +16,10 @@ body {
      font-size: 16px;
      font-weight: 500;
 }
+
+li > .links {
+     text-decoration: none;
+     color: honeydew;
+     list-style-type: none;
+}
+
