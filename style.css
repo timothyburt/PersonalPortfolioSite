@@ -1,3 +1,14 @@
+/* CSS Stylesheet */
+
+/* Global Styles: subject to change */
+
 body {
-     background-color: cadetblue;
+     /* Colors */
+     background-color: black;
+     color: chartreuse;
+
+     /* Fonts */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 16px;
+     font-weight: 500;
 }
