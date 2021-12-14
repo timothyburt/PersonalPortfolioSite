@@ -18,8 +18,37 @@ body {
 }
 
 li > .links {
+     /* Hyperlinks */
+     list-style-type: none;
      text-decoration: none;
      color: honeydew;
-     list-style-type: none;
+     text-transform: uppercase;
+}
+
+#cta { /* Contact CTA Link */
+     float: right;
+     clear: right;
+}
+
+/* ----- Site Structure ----- */
+
+header {
+
+}
+
+nav {
+     
+}
+
+main {
+
+}
+
+section {
+
+}
+
+footer {
+
 }
 
