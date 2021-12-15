@@ -20,21 +20,21 @@ body {
 nav li,
 footer li { /* Displays items side by side */
      display: inline;
-     text-align: center;
+     text-transform: uppercase;
+     font-weight: 600;
+     list-style-type: none; 
 }
-
 
 li > .links {
      /* Hyperlinks */
-     list-style-type: none;
      text-decoration: none;
      color: honeydew;
-     text-transform: uppercase;
-     font-weight: 600;
-     padding: 14px 16px;
+     padding: 12px 14px;
 }
 
 #cta { /* Contact CTA Link */
+     text-decoration: none;
+     color: cyan;
      float: right;
      clear: right;
 }
@@ -47,13 +47,24 @@ header {
      height: 50px;
 }
 
-nav {
+nav, footer { /* fixed placement */
+     background-color: #333;
      position: fixed;
+     text-align: center;
      width: 100%;
-     top: 0;
-     margin: 0;
-     padding: 0px 0px 14px 0px;
+     margin: auto;
+     padding: 12px 14px;
      z-index: 1;
+}
+
+nav { /* fixed to top */
+     top: 0;
+     text-align: left;
+}
+
+footer {
+     /* fixed to bottom */
+     bottom: 0;
 }
 
 main {
@@ -63,12 +74,3 @@ main {
 section {
 
 }
-
-footer {
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     background-color: #333;
-     width: 100%;
-     height: 100px;
-     }
