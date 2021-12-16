@@ -32,11 +32,15 @@ li > .links {
      padding: 12px 14px;
 }
 
-#cta { /* Contact CTA Link */
-     text-decoration: none;
-     color: cyan;
-     float: right;
-     clear: right;
+/* Hover & Active states */
+li a:hover,
+li a:focus,
+#cta,
+.active {
+     background-color: cyan;
+     color: #333;
+     border-radius: 10px 0px;
+     transition: ease-in-out 0.3s;
 }
 
 /* ----- Site Structure ----- */
@@ -44,12 +48,13 @@ li > .links {
 header {
      background-color: #333;
      width: 100%;
-     height: 50px;
+     height: auto;
 }
 
 nav, footer { /* fixed placement */
      background-color: #333;
      position: fixed;
+     overflow: hidden;
      text-align: center;
      width: 100%;
      margin: auto;
@@ -59,8 +64,9 @@ nav, footer { /* fixed placement */
 
 nav { /* fixed to top */
      top: 0;
-     text-align: left;
 }
+
+
 
 footer {
      /* fixed to bottom */
@@ -68,9 +74,9 @@ footer {
 }
 
 main {
-
+     width: 100%;
 }
 
 section {
-
+     width: 100%;
 }
