@@ -16,7 +16,8 @@ body {
      color: white;
 
       /* BG Image w/Overlay Gradient */
-      background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0)),
+      background-image: linear-gradient(rgba(125, 125, 125, 0.3), rgba(0, 0, 5, 0.9))
+      ,
       url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 
       /* Position  w/Parallax Effect */
@@ -34,41 +35,61 @@ body {
 }
 
 /* Section BG */
-.profile,
+
+.profile {
+     background-color: rgba(1, 1, 1, 0.3);
+     border-radius: 10px 0px;
+     max-width: 350px;
+     margin: auto;
+     position: fixed;
+     overflow-x: hidden;
+     top: 65;
+     left: 0;
+     z-index: 1;
+     height: auto;
+     padding: auto;
+     text-align: center;
+}
+
 .projects > div {
-     background-image: linear-gradient(rgba(125,125,125,0.3), rgba(0,0,5,0.9));
-     border-radius: 10px;
-     box-shadow: 2px 2px 4px 0px dodgerblue;
+     background-color: rgba(1, 1, 1, 0.3);
+     border-radius: 10px 0px;
+     box-shadow: 0 4px 8px 0 dodgerblue;
      padding: 10px;
 }
 
-
 nav li,
-footer li { /* Displays items side by side */
+footer li,
+button { /* Displays items side by side */
      display: inline;
      text-transform: uppercase;
      font-weight: 600;
      list-style-type: none; 
 }
 
-.cta {
-     display: block;
-     text-align:center;
-     text-transform: uppercase;
-     font-weight: 600;
-     list-style-type: none;
-     text-decoration: none;
-}
-
-li > .links {
-     /* Hyperlinks */
-     text-decoration: none;
-     color: honeydew;
+button { /* CTA button */
+     display: inline-block;
+     border: none;
+     border-radius: 0px 0px 10px 0px;
+     outline: 0;
+     color: white;
+     background-color: dodgerblue;
+     cursor: pointer;
+     width: 100%;
      padding: 12px 14px;
 }
 
-li > .cta{ 
-     /* CTA button*/
+.socials > a {
+     color: dodgerblue;
+     display: inline;
+     padding: 10px;
+     font-size: 24px;
+}
+
+li > .links,
+button > a {
+     /* Hyperlinks */
+     text-decoration: none;
      color: honeydew;
      padding: 12px 14px;
 }
@@ -76,7 +97,6 @@ li > .cta{
 /* Hover & Active states */
 li a:hover,
 li a:focus,
-.cta,
 .active {
      background-color:dodgerblue;
      color: #333;
@@ -85,10 +105,9 @@ li a:focus,
      transition: ease-in-out 0.3s;
 }
 
-h1, h3 {
+h1, h2, h3 {
      text-align: center;
      text-shadow: 1px 1px 2px black;
-     padding: 5px;
 }
 
 h3 {
@@ -108,12 +127,12 @@ hr {
 p {
      font-weight: 400;
      font-size: 14px;
-     text-align: justify;
      word-spacing: 2px;
-     padding: 25px;
+     padding: 5px;
 }
 
 img {
+     border-radius: 10px 0px 0px 0px;
      margin: 0 auto;
      padding: 0 auto;
 }
@@ -148,6 +167,7 @@ footer {
 /* ----- Content Sections ----- */
 
 main {
+     display: table;
      width: 100%;
      position: relative;
      top: 25;
@@ -167,35 +187,29 @@ main {
      font-weight: bold;
 }
 
-.profile {
-     position: fixed;
-     overflow-x: hidden;
-     top: 65;
-     left: 15;
-     z-index: 1;
-     width: 400px;
-     height: 85%;
+.profile-avatar {
      margin: 0 auto;
-     padding: 20px;
+     width: 100%;
+     height: 50%;
+}
+
+.title {
+     text-align: center;
+     padding-top: 0px;
+     color: dodgerblue;
+     font-size: 18px;
 }
 
 .projects {
      position: relative;
-     top: 45;
+     top: 25;
      width: 75%;
      height: 85%;
      margin-left: 400px;
-     padding: 85px 50px;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: center;
+     padding: 50px;
 }
 
-.profile-avatar {
-     margin: 25px 100px;
-     width: 50%;
-     height: auto;
-     border: 1px solid dodgerblue;
-     box-shadow: 1px 1px 2px 0px dodgerblue;
-     border-radius: 50%;
+.socials {
+     width: 100%;
+     padding: 15px;
 }
