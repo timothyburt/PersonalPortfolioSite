@@ -51,7 +51,7 @@ body {
      text-align: center;
 }
 
-.projects > div {
+.projects {
      background-color: rgba(1, 1, 1, 0.3);
      border-radius: 10px 0px;
      box-shadow: 0 4px 8px 0 dodgerblue;
@@ -167,7 +167,6 @@ footer {
 /* ----- Content Sections ----- */
 
 main {
-     display: table;
      width: 100%;
      position: relative;
      top: 25;
@@ -202,11 +201,13 @@ main {
 
 .projects {
      position: relative;
+     display: flex;
+     flex-flow: row wrap;
      top: 25;
      width: 75%;
-     height: 85%;
-     margin-left: 400px;
+     height: auto;
      padding: 50px;
+     margin-left: 410px;
 }
 
 .socials {
