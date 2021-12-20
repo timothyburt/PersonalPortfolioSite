@@ -40,22 +40,33 @@ body {
      background-color: rgba(1, 1, 1, 0.3);
      border-radius: 10px 0px;
      max-width: 350px;
-     margin: auto;
-     position: fixed;
-     overflow-x: hidden;
-     top: 65;
-     left: 0;
-     z-index: 1;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
      height: auto;
      padding: auto;
+     margin: 30px;
      text-align: center;
 }
 
 .projects {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-end;
+     align-items: center;
+     
+}
+
+.projects > div {
+     max-width: 600px;
      background-color: rgba(1, 1, 1, 0.3);
      border-radius: 10px 0px;
      box-shadow: 0 4px 8px 0 dodgerblue;
      padding: 10px;
+     flex-basis: 50%;
+     padding: 50px;
+     margin: 30px;
 }
 
 nav li,
@@ -153,6 +164,7 @@ nav, footer { /* fixed placement */
      margin: auto;
      padding: 24px 14px;
      z-index: 2;
+     background-color: rgba(1, 1, 1, 0.5);
 }
 
 nav { /* fixed to top */
@@ -166,12 +178,22 @@ footer {
 
 /* ----- Content Sections ----- */
 
-main {
-     width: 100%;
+section {
      position: relative;
-     top: 25;
-     margin: 0 auto;
-     padding: 0 auto;
+     width: 100%;
+     margin: auto;
+     padding: auto;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.sidebar {
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: flex-start;
 }
 
 .photo-credits {
@@ -197,17 +219,6 @@ main {
      padding-top: 0px;
      color: dodgerblue;
      font-size: 18px;
-}
-
-.projects {
-     position: relative;
-     display: flex;
-     flex-flow: row wrap;
-     top: 25;
-     width: 75%;
-     height: auto;
-     padding: 50px;
-     margin-left: 410px;
 }
 
 .socials {
