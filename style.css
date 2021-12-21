@@ -1,4 +1,4 @@
-/* Global styles are subject to change */
+/* ----- Global styles are subject to change ----- */
 
 * { /* Page Margin Defaults */
      box-sizing: border-box;
@@ -6,15 +6,6 @@
      padding: 0;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-
-     .sidebar,
-     .projects {
-          width: 100%;
-          padding: 0;
-     }
-}
 
 html { /* Smooth Scrolling */
      scroll-behavior: smooth;
@@ -44,7 +35,106 @@ body {
      font-weight: 500;
 }
 
-/* Section BG */
+h1, h2, h3 {
+     text-align: center;
+     text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+     padding: 10px 0 25px 0;
+}
+
+h3 {
+     font-size: 36px;
+}
+
+h4 {
+     font-size: 14px;
+}
+
+h5 {
+     color: dodgerblue;
+     font-size: 14px;
+     text-decoration: underline;
+     text-align: right;
+}
+
+p {
+     font-weight: 400;
+     font-size: 14px;
+     word-spacing: 2px;
+     padding: 5px;
+}
+
+img {
+     border-radius: 10px 0px 0px 0px;
+     margin: 0 auto;
+     padding: 0 auto;
+}
+
+/* ----- Site Structure ----- */
+
+header {
+     width: 100%;
+}
+
+nav, footer {
+     overflow: hidden;
+     text-align: center;
+     width: 100%;
+     height: auto;
+     margin: auto;
+     padding: 24px 14px;
+     z-index: 2;
+     background-color: rgba(1, 1, 1, 0.9);
+}
+
+nav {
+     /* fixed to top */
+     position: fixed;
+     top: 0;
+}
+
+.content {
+     /* Flexed Content Region  */
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: flex-start;
+     margin: 150px 0 50px 0;
+}
+
+.left-side {
+     width: 25%;
+     padding-right: 20px;
+}
+
+.right-side {
+     width: 75%;
+     padding-right: 20px;
+}
+
+.card {
+     background-color: rgba(1, 1, 1, 0.3);
+     border-radius: 10px 0px;
+     margin-top: 20px;
+}
+
+.heroBG {
+     background-color: rgba(1, 1, 1, 0.9);
+     border-radius: 10px 0;
+     margin: 0 auto;
+     width: 100%;
+     height: auto;
+     padding: 20px;
+}
+
+footer {
+     /* fixed to bottom */
+     background-color: rgba(0, 0, 0, 0);
+}
+
+/* ----- Section BG ----- */
 
 .profile {
      background-color: rgba(1, 1, 1, 0.3);
@@ -53,18 +143,6 @@ body {
      padding: auto;
      margin-top: 20px;
      text-align: center;
-}
-
-.projects {
-    width: 70%;
-}
-
-.projects > div {
-     background-color: rgba(1, 1, 1, 0.3);
-     border-radius: 10px 0px;
-     box-shadow: 0 4px 8px 0 dodgerblue;
-     padding: 50px;
-     margin: 20px;
 }
 
 nav li,
@@ -114,78 +192,7 @@ li a:focus,
      transition: ease-in-out 0.3s;
 }
 
-h1, h2, h3 {
-     text-align: center;
-     text-shadow: 1px 1px 2px black;
-}
-
-h3 {
-     font-size: 36px;
-}
-
-h4 {
-     font-size: 14px;
-}
-
-hr {
-     margin: 0 auto;
-     width: 75%;
-     color: dodgerblue;
-}
-
-p {
-     font-weight: 400;
-     font-size: 14px;
-     word-spacing: 2px;
-     padding: 5px;
-}
-
-img {
-     border-radius: 10px 0px 0px 0px;
-     margin: 0 auto;
-     padding: 0 auto;
-}
-
-/* ----- Site Structure ----- */
-
-header {
-     background-color: #333;
-     width: 100%;
-}
-
-nav, footer { /* fixed placement */
-     position: fixed;
-     overflow: hidden;
-     text-align: center;
-     width: 100%;
-     height: auto;
-     margin: auto;
-     padding: 24px 14px;
-     z-index: 2;
-     background-color: rgba(1, 1, 1, 0.5);
-}
-
-nav { /* fixed to top */
-     top: 0;
-}
-
-footer {
-     /* fixed to bottom */
-     bottom: 0;
-}
-
 /* ----- Content Sections ----- */
-
-.content {
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: center;
-}
-
-.sidebar {
-     width: 30%;
-     padding-right: 10px;
-}
 
 .photo-credits {
      margin-right: 25px;
@@ -216,3 +223,20 @@ footer {
      width: 100%;
      padding: 15px;
 }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+     .left-side,
+     .right-side {
+          width: 100%;
+          padding: 10px;
+     }
+}
+
+
+/* ----- 12/20/21 |> Fixed layout issues.
+                     Return here to organize css
+                     elements into groups
+   ----- 9:26 PM 
+*/
