@@ -53,10 +53,16 @@ h4 {
 }
 
 h5 {
-     color: dodgerblue;
+     background-color: dodgerblue;
      font-size: 14px;
-     text-decoration: underline;
+     text-transform: uppercase;
      text-align: right;
+     float: right;
+     clear: right;
+     padding: 5px;
+     margin-top: -10px;
+     width: 150px;
+     border-radius: 10px 0;
 }
 
 p {
@@ -64,6 +70,13 @@ p {
      font-size: 14px;
      word-spacing: 2px;
      padding: 5px;
+}
+
+hr {
+     color: dodgerblue;
+     opacity: 0.9;
+     text-align: center;
+     width: 50%;
 }
 
 img {
@@ -110,7 +123,7 @@ nav {
 }
 
 .right-side {
-     width: 75%;
+     width: 65%;
      padding-right: 20px;
 }
 
@@ -223,6 +236,26 @@ li a:focus,
      width: 100%;
      padding: 15px;
 }
+
+/* Job Items */
+.jobs > h3, h4 {
+     padding: 5px 0 0 20px;
+     text-align: left;
+     font-size: 20px;
+}
+
+.jobs > h4 {
+     color: dodgerblue;
+     font-size: 18px;
+}
+
+.jobs > p {
+     text-align: left;
+     font-size: 16px;
+     font-weight: 300;
+     padding: 20px;
+}
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
