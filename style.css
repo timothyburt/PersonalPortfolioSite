@@ -237,14 +237,37 @@ li a:focus,
      padding: 15px;
 }
 
+/* Skills List */
+.list {
+     columns: 2;
+     list-style-type: square;
+     list-style-position: inside;
+     display: inline-block;
+     padding: 20px;
+}
+
+.list > p {
+     text-align: justify;
+     column-span: all;
+}
+
+.list > li {
+     text-transform: uppercase;
+     margin: 0 auto;
+     font-size: 14px;
+     font-weight: 600;
+}
+
 /* Job Items */
-.jobs > h3, h4 {
+.jobs > h3 {
      padding: 5px 0 0 20px;
      text-align: left;
      font-size: 20px;
 }
 
 .jobs > h4 {
+     padding: 5px 0 0 20px;
+     text-align: left;
      color: dodgerblue;
      font-size: 18px;
 }
