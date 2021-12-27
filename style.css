@@ -159,6 +159,7 @@ footer {
 }
 
 nav li,
+.inner-links li,
 footer li,
 button { /* Displays items side by side */
      display: inline;
@@ -203,6 +204,18 @@ li a:focus,
      border-radius: 10px 0px;
      box-shadow: 1px 1px 2px 0px dodgerblue;
      transition: ease-in-out 0.3s;
+}
+
+.inner-links {
+     background-color: dodgerblue;
+     border-radius: 0 0 10px 0;
+     text-align: center;
+}
+
+.inner-links > button {
+     width: 33%;
+     padding: 0 auto;
+     margin: 0 auto;
 }
 
 /* ----- Content Sections ----- */
@@ -255,6 +268,11 @@ li a:focus,
      margin: 0 auto;
      font-size: 14px;
      font-weight: 600;
+}
+
+.skills {
+     width: 100%;
+     text-align: center;
 }
 
 /* Job Items */
