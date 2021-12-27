@@ -73,10 +73,10 @@ p {
 }
 
 hr {
-     color: dodgerblue;
-     opacity: 0.9;
-     text-align: center;
-     width: 50%;
+     border: 1px solid dodgerblue;
+     opacity: 0.3;
+     margin: 0 auto;
+     width: 75%;
 }
 
 img {
@@ -239,7 +239,7 @@ li a:focus,
 
 /* Skills List */
 .list {
-     columns: 2;
+     columns: 250px 3;
      list-style-type: square;
      list-style-position: inside;
      display: inline-block;
@@ -247,8 +247,7 @@ li a:focus,
 }
 
 .list > p {
-     text-align: justify;
-     column-span: all;
+     text-align: left;
 }
 
 .list > li {
