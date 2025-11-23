@@ -26,9 +26,9 @@ body {
 	background-color: #212121;
 	color: white;
 
-	/* BG Image w/Overlay Gradient */
+	/* BG Image w/Overlay Gradient - NOW USING THE GENERATED FORGE MOTIF */
 	background-image: linear-gradient(rgba(125, 125, 125, 0.3), rgba(0, 0, 5, 0.9)),
-		url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+		url("img/forgeBG.jpg");
 
 	/* Position w/Parallax Effect */
 	background-repeat: no-repeat;
@@ -228,7 +228,7 @@ li a:focus,
 .active {
 	background-color: var(--color-accent-primary);
 	/* VARIABLE USE */
-	color: #ffffff;
+	color: #333;
 	border-radius: 10px 0px;
 	box-shadow: 1px 1px 5px 0px var(--color-accent-primary);
 	/* VARIABLE USE */
@@ -400,3 +400,10 @@ li a:focus,
 		padding: 10px;
 	}
 }
+
+
+/* ----- 12/20/21 |> Fixed layout issues.
+	Return here to organize css
+	elements into groups
+----- 9:26 PM
+*/
