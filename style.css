@@ -1,13 +1,15 @@
 /* ----- Global styles are subject to change ----- */
 
-* { /* Page Margin Defaults */
+* {
+	/* Page Margin Defaults */
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 
-html { /* Smooth Scrolling */
+html {
+	/* Smooth Scrolling */
 	scroll-behavior: smooth;
 }
 
@@ -18,7 +20,7 @@ body {
 
 	/* BG Image w/Overlay Gradient */
 	background-image: linear-gradient(rgba(125, 125, 125, 0.3), rgba(0, 0, 5, 0.9)),
-	url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+		url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 
 	/* Position  w/Parallax Effect */
 	background-repeat: no-repeat;
@@ -34,7 +36,9 @@ body {
 	font-weight: 500;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	text-align: center;
 	text-shadow: 1px 1px 2px black;
 }
@@ -52,7 +56,8 @@ h4 {
 }
 
 h5 {
-	background-color: dodgerblue;
+	background-color: #FF4500;
+	/* RUNIC RED SWAP */
 	font-size: 14px;
 	text-transform: uppercase;
 	text-align: right;
@@ -72,7 +77,8 @@ p {
 }
 
 hr {
-	border: 1px solid dodgerblue;
+	border: 1px solid #FF4500;
+	/* RUNIC RED SWAP */
 	opacity: 0.3;
 	margin: 0 auto;
 	width: 75%;
@@ -84,13 +90,14 @@ img {
 	padding: 0 auto;
 }
 
-/* ----- Site Structure ----- */
+/* ----- Site Structure: Thematic Bindings ----- */
 
 header {
 	width: 100%;
 }
 
-nav, footer {
+nav,
+footer {
 	overflow: hidden;
 	text-align: center;
 	width: 100%;
@@ -98,17 +105,20 @@ nav, footer {
 	margin: auto;
 	padding: 24px 14px;
 	z-index: 2;
-	background-color: rgba(1, 1, 1, 0.9);
+	background-color: rgba(0, 0, 0, 0.95);
+	/* Heavy Binding Look */
+	border-bottom: 2px solid rgba(255, 69, 0, 0.5);
+	/* Subtle runic line */
 }
 
 nav {
-	 /* fixed to top */
+	/* fixed to top */
 	position: fixed;
 	top: 0;
 }
 
 .content {
-	 /* Flexed Content Region  */
+	/* Flexed Content Region  */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -127,172 +137,245 @@ nav {
 }
 
 .card {
-	 background-color: rgba(1, 1, 1, 0.3);
-	 border-radius: 10px 0px;
-	 margin-top: 20px;
+	background-color: rgba(1, 1, 1, 0.5);
+	/* Darker for carved look */
+	border-radius: 10px 0px;
+	margin-top: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	/* Deeper shadow */
 }
 
 .heroBG {
-	 background-color: rgba(1, 1, 1, 0.9);
-	 border-radius: 10px 0;
-	 margin: 0 auto;
-	 width: 100%;
-	 height: auto;
-	 padding: 20px;
+	background-color: rgba(1, 1, 1, 0.9);
+	border-radius: 10px 0;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding: 20px;
 }
 
 footer {
-	 /* fixed to bottom */
-	 background-color: rgba(0, 0, 0, 0);
+	/* fixed to bottom */
+	background-color: rgba(0, 0, 0, 0.95);
+	/* Heavy Binding Look */
+	border-top: 2px solid rgba(255, 69, 0, 0.5);
+	/* Subtle runic line */
 }
 
 /* ----- Section BG ----- */
 
 .profile {
-	 background-color: rgba(1, 1, 1, 0.3);
-	 border-radius: 10px 0px;
-	 height: auto;
-	 padding: auto;
-	 margin-top: 20px;
-	 text-align: center;
+	background-color: rgba(1, 1, 1, 0.3);
+	border-radius: 10px 0px;
+	height: auto;
+	padding: auto;
+	margin-top: 20px;
+	text-align: center;
 }
 
 nav li,
 .inner-links li,
 footer li,
-button { /* Displays items side by side */
-	 display: inline;
-	 text-transform: uppercase;
-	 font-weight: 600;
-	 list-style-type: none;
+button {
+	/* Displays items side by side */
+	display: inline;
+	text-transform: uppercase;
+	font-weight: 600;
+	list-style-type: none;
 }
 
-button { /* CTA button */
-	 display: inline-block;
-	 border: none;
-	 border-radius: 0px 0px 10px 0px;
-	 outline: 0;
-	 color: white;
-	 background-color: dodgerblue;
-	 cursor: pointer;
-	 width: 100%;
-	 padding: 12px 14px;
+button {
+	/* CTA button */
+	display: inline-block;
+	border: none;
+	border-radius: 0px 0px 10px 0px;
+	outline: 0;
+	color: white;
+	background-color: #FF4500;
+	/* RUNIC RED SWAP */
+	cursor: pointer;
+	width: 100%;
+	padding: 12px 14px;
 }
 
-.socials > a {
-	 color: dodgerblue;
-	 display: inline;
-	 padding: 10px;
-	 font-size: 24px;
+.socials>a {
+	color: #FF4500;
+	/* RUNIC RED SWAP */
+	display: inline;
+	padding: 10px;
+	font-size: 24px;
 }
 
-li > .links,
-button > a {
-	 /* Hyperlinks */
-	 text-decoration: none;
-	 color: honeydew;
-	 padding: 12px 14px;
+li>.links,
+button>a {
+	/* Hyperlinks */
+	text-decoration: none;
+	color: honeydew;
+	padding: 12px 14px;
 }
 
 /* Hover & Active states */
 li a:hover,
 li a:focus,
 .active {
-	 background-color:dodgerblue;
-	 color: #333;
-	 border-radius: 10px 0px;
-	 box-shadow: 1px 1px 2px 0px dodgerblue;
-	 transition: ease-in-out 0.3s;
+	background-color: #FF4500;
+	/* RUNIC RED SWAP */
+	color: #333;
+	border-radius: 10px 0px;
+	box-shadow: 1px 1px 5px 0px #FF4500;
+	/* Enhanced Runic Glow */
+	transition: ease-in-out 0.3s;
 }
 
 .inner-links {
-	 background-color: dodgerblue;
-	 border-radius: 0 0 10px 0;
-	 text-align: center;
+	background-color: #FF4500;
+	/* RUNIC RED SWAP */
+	border-radius: 0 0 10px 0;
+	text-align: center;
 }
 
-.inner-links > button {
-	 width: 33%;
-	 padding: 0 auto;
-	 margin: 0 auto;
+.inner-links>button {
+	width: 33%;
+	padding: 0 auto;
+	margin: 0 auto;
 }
 
 /* ----- Content Sections ----- */
 
 .photo-credits {
-	 margin-right: 25px;
-	 text-align: center;
-	 text-shadow: 1px 1px 2px black;
+	margin-right: 25px;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
 }
 
-.blue { /* Photo Links */
-	 color: dodgerblue;
-	 text-decoration: none;
-	 font-weight: bold;
+.blue {
+	/* Photo Links */
+	color: #FF4500;
+	/* RUNIC RED SWAP */
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .profile-avatar {
-	 margin: 0 auto;
-	 width: 100%;
-	 height: auto;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
 }
 
 .title {
-	 text-align: center;
-	 padding-top: 0px;
-	 color: dodgerblue;
-	 font-size: 18px;
+	text-align: center;
+	padding-top: 0px;
+	color: #FF4500;
+	/* RUNIC RED SWAP */
+	font-size: 18px;
 }
 
 .socials {
-	 width: 100%;
-	 padding: 15px;
+	width: 100%;
+	padding: 15px;
 }
 
 /* Skills List */
 .list {
-	 columns: 250px 3;
-	 list-style-type: square;
-	 list-style-position: inside;
-	 display: inline-block;
-	 padding: 20px;
+	columns: 250px 3;
+	list-style-type: square;
+	list-style-position: inside;
+	display: inline-block;
+	padding: 20px;
 }
 
-.list > p {
-	 text-align: left;
+.list>p {
+	text-align: left;
 }
 
-.list > li {
-	 text-transform: uppercase;
-	 margin: 0 auto;
-	 font-size: 14px;
-	 font-weight: 600;
+.list>li {
+	text-transform: uppercase;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .skills {
-	 width: 100%;
-	 text-align: center;
+	width: 100%;
+	text-align: center;
 }
 
 /* Job Items */
-.jobs > h3 {
-	 padding: 5px 0 0 20px;
-	 text-align: left;
-	 font-size: 20px;
+.jobs>h3 {
+	padding: 5px 0 0 20px;
+	text-align: left;
+	font-size: 20px;
 }
 
-.jobs > h4 {
-	 padding: 5px 0 0 20px;
-	 text-align: left;
-	 color: dodgerblue;
-	 font-size: 18px;
+.jobs>h4 {
+	padding: 5px 0 0 20px;
+	text-align: left;
+	color: #FF4500;
+	/* RUNIC RED SWAP */
+	font-size: 18px;
 }
 
-.jobs > p {
-	 text-align: left;
-	 font-size: 16px;
-	 font-weight: 300;
-	 padding: 20px;
+.jobs>p {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 20px;
+}
+
+/* ----- NEW CTA Button Styling (The Portal) ----- */
+
+#cta-button {
+	/* Override standard button style for dramatic effect */
+	background-color: transparent;
+	padding: 40px 10px;
+	border: 3px solid #FF4500;
+	border-radius: 10px;
+	width: 90%;
+	/* make it narrower than 100% to stand out */
+	margin: 20px auto;
+	box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+	/* Subtle glow effect */
+	transition: all 0.5s ease-in-out;
+}
+
+#cta-button:hover {
+	background-color: #FF4500;
+	/* Fill the button on hover */
+	box-shadow: 0 0 30px #FF4500;
+}
+
+#cta-button>a {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0;
+}
+
+.cta-text {
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.cta-subtext {
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFDAB9;
+	/* Light peach/runic color */
+	margin-top: 5px;
+}
+
+/* Style for the Architect's Plan link button */
+.forge-link-button {
+	background-color: transparent;
+	border: 1px solid #FF4500;
+	margin-top: 10px;
+}
+
+.forge-link-button:hover {
+	background-color: #FF4500;
 }
 
 
