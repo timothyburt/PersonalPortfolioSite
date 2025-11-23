@@ -137,7 +137,13 @@ nav {
     background-color: rgba(1, 1, 1, 0.5); /* Darker for carved look */
     border-radius: 10px 0px;
     margin-top: 20px;
+	margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+}
+
+.cta-center-wrapper {
+    /* This centers the CTA button block, leaving all other .card content untouched. */
+    text-align: center; 
 }
 
 .heroBG {
@@ -227,18 +233,6 @@ li a:focus,
 }
 
 /* ----- Content Sections ----- */
-
-.photo-credits {
-    margin-right: 25px;
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-}
-
-.accent { /* Photo Links */
-    color: var(--color-accent-primary); /* VARIABLE USE */
-    text-decoration: none;
-    font-weight: bold;
-}
 
 .profile-avatar {
     margin: 0 auto;
