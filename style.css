@@ -228,7 +228,7 @@ li a:focus,
 .active {
 	background-color: var(--color-accent-primary);
 	/* VARIABLE USE */
-	color: #333;
+	color: #fff;
 	border-radius: 10px 0px;
 	box-shadow: 1px 1px 5px 0px var(--color-accent-primary);
 	/* VARIABLE USE */
