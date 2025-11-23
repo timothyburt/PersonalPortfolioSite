@@ -1,393 +1,365 @@
 /* ----- Global styles are subject to change ----- */
 
 :root {
-	/* TEMPERED EARTH PALETTE - Defined as variables for easy theming */
-	--color-accent-primary: #9F4D35;
-	/* Rusty Sienna */
-	--color-accent-secondary: #FFDAB9;
-	/* Light Peach/Runic Contrast */
+    /* TEMPERED EARTH PALETTE - Defined as variables for easy theming */
+    --color-accent-primary: #9F4D35; /* Rusty Sienna */
+    --color-accent-secondary: #FFDAB9; /* Light Peach/Runic Contrast */
 }
 
-* {
-	/* Page Margin Defaults */
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* { /* Page Margin Defaults */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
-html {
-	/* Smooth Scrolling */
-	scroll-behavior: smooth;
+html { /* Smooth Scrolling */
+    scroll-behavior: smooth;
 }
 
 body {
-	/* Colors */
-	background-color: #212121;
-	color: white;
+    /* Colors */
+    background-color: #212121;
+    color: white;
 
-	/* BG Image w/Overlay Gradient - NOW USING THE GENERATED FORGE MOTIF */
-	background-image: linear-gradient(rgba(125, 125, 125, 0.3), rgba(0, 0, 5, 0.9)),
-		url("img/forgeBG.jpg");
+    /* BG Image w/Overlay Gradient - NOW USING THE GENERATED FORGE MOTIF */
+    background-image: linear-gradient(rgba(125, 125, 125, 0.3), rgba(0, 0, 5, 0.9)),
+    url("img/forgeBG.jpg"); /* <--- UPDATED TO YOUR LOCAL PATH */
 
-	/* Position w/Parallax Effect */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
-	position: relative;
-	height: 100%;
+    /* Position w/Parallax Effect */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
 
-	/* Fonts */
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
+    /* Fonts */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-h1,
-h2,
-h3 {
-	text-align: center;
-	text-shadow: 1px 1px 2px black;
+h1, h2, h3 {
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
 }
 
 h2 {
-	padding: 10px 0 25px 0;
+    padding: 10px 0 25px 0;
 }
 
 h3 {
-	font-size: 36px;
+    font-size: 36px;
 }
 
 h4 {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 h5 {
-	background-color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	font-size: 14px;
-	text-transform: uppercase;
-	text-align: right;
-	float: right;
-	clear: right;
-	padding: 5px;
-	margin: -15px;
-	width: 150px;
-	border-radius: 10px 0;
+    background-color: var(--color-accent-primary); /* VARIABLE USE */
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: right;
+    float: right;
+    clear: right;
+    padding: 5px;
+    margin: -15px;
+    width: 150px;
+    border-radius: 10px 0;
 }
 
 p {
-	font-weight: 400;
-	font-size: 14px;
-	word-spacing: 2px;
-	padding: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    word-spacing: 2px;
+    padding: 15px;
 }
 
 hr {
-	border: 1px solid var(--color-accent-primary);
-	/* VARIABLE USE */
-	opacity: 0.3;
-	margin: 0 auto;
-	width: 75%;
+    border: 1px solid var(--color-accent-primary); /* VARIABLE USE */
+    opacity: 0.3;
+    margin: 0 auto;
+    width: 75%;
 }
 
 img {
-	border-radius: 10px 0px 0px 0px;
-	margin: 0 auto;
-	padding: 0 auto;
+    border-radius: 10px 0px 0px 0px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 /* ----- Site Structure: Thematic Bindings ----- */
 
 header {
-	width: 100%;
+    width: 100%;
 }
 
-nav,
-footer {
-	overflow: hidden;
-	text-align: center;
-	width: 100%;
-	height: auto;
-	margin: auto;
-	padding: 24px 14px;
-	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.95);
-	/* Heavy Binding Look */
-	border-bottom: 2px solid rgba(159, 77, 53, 0.5);
-	/* Subtle runic line using 9F4D35 */
+nav, footer {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 24px 14px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.95); /* Heavy Binding Look */
+    border-bottom: 2px solid rgba(159, 77, 53, 0.5); /* Subtle runic line */
 }
 
 nav {
-	/* fixed to top */
-	position: fixed;
-	top: 0;
+    /* fixed to top */
+    position: fixed;
+    top: 0;
 }
 
 .content {
-	/* Flexed Content Region  */
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: flex-start;
-	margin: 150px 0 50px 0;
+    /* Flexed Content Region  */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 150px 0 50px 0;
 }
 
 .left-side {
-	width: 25%;
-	padding-right: 20px;
+    width: 25%;
+    padding-right: 20px;
 }
 
 .right-side {
-	width: 65%;
-	padding-right: 20px;
+    width: 65%;
+    padding-right: 20px;
 }
 
 .card {
-	background-color: rgba(1, 1, 1, 0.5);
-	/* Darker for carved look */
-	border-radius: 10px 0px;
-	margin-top: 20px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-	/* Deeper shadow */
+    background-color: rgba(1, 1, 1, 0.5); /* Darker for carved look */
+    border-radius: 10px 0px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow */
 }
 
 .heroBG {
-	background-color: rgba(1, 1, 1, 0.9);
-	border-radius: 10px 0;
-	margin: 0 auto;
-	width: 100%;
-	height: auto;
-	padding: 20px;
+    background-color: rgba(1, 1, 1, 0.9);
+    border-radius: 10px 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
 footer {
-	/* fixed to bottom */
-	background-color: rgba(0, 0, 0, 0.95);
-	/* Heavy Binding Look */
-	border-top: 2px solid rgba(159, 77, 53, 0.5);
-	/* Subtle runic line using 9F4D35 */
+    /* fixed to bottom */
+    background-color: rgba(0, 0, 0, 0.95); /* Heavy Binding Look */
+    border-top: 2px solid rgba(159, 77, 53, 0.5); /* Subtle runic line */
 }
 
 /* ----- Section BG ----- */
 
 .profile {
-	background-color: rgba(1, 1, 1, 0.3);
-	border-radius: 10px 0px;
-	height: auto;
-	padding: auto;
-	margin-top: 20px;
-	text-align: center;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 10px 0px;
+    height: auto;
+    padding: auto;
+    margin-top: 20px;
+    text-align: center;
 }
 
 nav li,
 .inner-links li,
 footer li,
-button {
-	/* Displays items side by side */
-	display: inline;
-	text-transform: uppercase;
-	font-weight: 600;
-	list-style-type: none;
+button { /* Displays items side by side */
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style-type: none;
 }
 
-button {
-	/* CTA button */
-	display: inline-block;
-	border: none;
-	border-radius: 0px 0px 10px 0px;
-	outline: 0;
-	color: white;
-	background-color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	cursor: pointer;
-	width: 100%;
-	padding: 12px 14px;
+button { /* CTA button */
+    display: inline-block;
+    border: none;
+    border-radius: 0px 0px 10px 0px;
+    outline: 0;
+    color: white;
+    background-color: var(--color-accent-primary); /* VARIABLE USE */
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 14px;
 }
 
-.socials>a {
-	color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	display: inline;
-	padding: 10px;
-	font-size: 24px;
+.socials > a {
+    color: var(--color-accent-primary); /* VARIABLE USE */
+    display: inline;
+    padding: 10px;
+    font-size: 24px;
 }
 
-li>.links,
-button>a {
-	/* Hyperlinks */
-	text-decoration: none;
-	color: honeydew;
-	padding: 12px 14px;
+li > .links,
+button > a {
+    /* Hyperlinks */
+    text-decoration: none;
+    color: honeydew;
+    padding: 12px 14px;
 }
 
 /* Hover & Active states */
 li a:hover,
 li a:focus,
 .active {
-	background-color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	color: honeydew;
-	border-radius: 10px 0px;
-	box-shadow: 1px 1px 5px 0px var(--color-accent-primary);
-	/* VARIABLE USE */
-	transition: ease-in-out 0.3s;
+    background-color: var(--color-accent-primary); /* VARIABLE USE */
+    color: honeydew; /* Link text stays light for contrast */
+    border-radius: 10px 0px;
+    box-shadow: 1px 1px 5px 0px var(--color-accent-primary); /* VARIABLE USE */
+    transition: ease-in-out 0.3s;
 }
 
 .inner-links {
-	background-color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	border-radius: 0 0 10px 0;
-	text-align: center;
+    background-color: var(--color-accent-primary); /* VARIABLE USE */
+    border-radius: 0 0 10px 0;
+    text-align: center;
 }
 
-.inner-links>button {
-	width: 33%;
-	padding: 0 auto;
-	margin: 0 auto;
+.inner-links > button {
+    width: 33%;
+    padding: 0 auto;
+    margin: 0 auto;
 }
 
 /* ----- Content Sections ----- */
 
 .photo-credits {
-	margin-right: 25px;
-	text-align: center;
-	text-shadow: 1px 1px 2px black;
+    margin-right: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
 }
 
-.accent {
-	/* Photo Links */
-	color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	text-decoration: none;
-	font-weight: bold;
+.accent { /* Photo Links */
+    color: var(--color-accent-primary); /* VARIABLE USE */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .profile-avatar {
-	margin: 0 auto;
-	width: 100%;
-	height: auto;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 .title {
-	text-align: center;
-	padding-top: 0px;
-	color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	font-size: 18px;
+    text-align: center;
+    padding-top: 0px;
+    color: var(--color-accent-primary); /* VARIABLE USE */
+    font-size: 18px;
 }
 
 .socials {
-	width: 100%;
-	padding: 15px;
+    width: 100%;
+    padding: 15px;
 }
 
 /* Skills List */
 .list {
-	columns: 250px 3;
-	list-style-type: square;
-	list-style-position: inside;
-	display: inline-block;
-	padding: 20px;
+    columns: 250px 3;
+    list-style-type: square;
+    list-style-position: inside;
+    display: inline-block;
+    padding: 20px;
 }
 
-.list>p {
-	text-align: left;
+.list > p {
+    text-align: left;
 }
 
-.list>li {
-	text-transform: uppercase;
-	margin: 0 auto;
-	font-size: 14px;
-	font-weight: 600;
+.list > li {
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .skills {
-	width: 100%;
-	text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 /* Job Items */
-.jobs>h3 {
-	padding: 5px 0 0 20px;
-	text-align: left;
-	font-size: 20px;
+.jobs > h3 {
+    padding: 5px 0 0 20px;
+    text-align: left;
+    font-size: 20px;
 }
 
-.jobs>h4 {
-	padding: 5px 0 0 20px;
-	text-align: left;
-	color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	font-size: 18px;
+.jobs > h4 {
+    padding: 5px 0 0 20px;
+    text-align: left;
+    color: var(--color-accent-primary); /* VARIABLE USE */
+    font-size: 18px;
 }
 
-.jobs>p {
-	text-align: left;
-	font-size: 16px;
-	font-weight: 300;
-	padding: 20px;
+.jobs > p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px;
 }
 
 /* ----- NEW CTA Button Styling (The Portal) ----- */
 
+.forge-link-wrapper {
+    /* New container for centering the CTA */
+    text-align: center;
+    padding-top: 20px;
+}
+
 #cta-button {
-	/* Override standard button style for dramatic effect */
-	background-color: transparent;
-	padding: 40px 10px;
-	border: 3px solid var(--color-accent-primary);
-	/* VARIABLE USE */
-	border-radius: 10px;
-	width: 90%;
-	/* make it narrower than 100% to stand out */
-	margin: 20px auto;
-	box-shadow: 0 0 20px rgba(159, 77, 53, 0.7);
-	/* Subtle glow effect using 9F4D35 */
-	transition: all 0.5s ease-in-out;
+    /* Override standard button style for dramatic effect */
+    background-color: transparent;
+    padding: 40px 10px;
+    border: 3px solid var(--color-accent-primary); /* VARIABLE USE */
+    border-radius: 10px;
+    width: 90%; /* make it narrower than 100% to stand out */
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(159, 77, 53, 0.7); /* Subtle glow effect */
+    transition: all 0.5s ease-in-out;
 }
 
 #cta-button:hover {
-	background-color: var(--color-accent-primary);
-	/* VARIABLE USE */
-	box-shadow: 0 0 30px var(--color-accent-primary);
-	/* VARIABLE USE */
+    background-color: var(--color-accent-primary); /* VARIABLE USE */
+    box-shadow: 0 0 30px var(--color-accent-primary); /* VARIABLE USE */
 }
 
-#cta-button>a {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 0;
+#cta-button > a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
 }
 
 .cta-text {
-	font-size: 32px;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: white;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
 }
 
 .cta-subtext {
-	font-size: 16px;
-	font-weight: 400;
-	color: var(--color-accent-secondary);
-	/* VARIABLE USE */
-	margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-accent-secondary); /* VARIABLE USE */
+    margin-top: 5px;
 }
 
 /* Style for the Architect's Plan link button */
 .forge-link-button {
-	background-color: transparent;
-	border: 1px solid var(--color-accent-primary);
-	/* VARIABLE USE */
-	margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid var(--color-accent-primary); /* VARIABLE USE */
+    margin-top: 10px;
 }
 
 .forge-link-button:hover {
-	background-color: var(--color-accent-primary);
-	/* VARIABLE USE */
+    background-color: var(--color-accent-primary); /* VARIABLE USE */
 }
 
 
@@ -400,10 +372,3 @@ li a:focus,
 		padding: 10px;
 	}
 }
-
-
-/* ----- 12/20/21 |> Fixed layout issues.
-	Return here to organize css
-	elements into groups
------ 9:26 PM
-*/
