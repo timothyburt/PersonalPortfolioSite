@@ -22,7 +22,7 @@ body {
 	background-image: linear-gradient(rgba(125, 125, 125, 0.3), rgba(0, 0, 5, 0.9)),
 		url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 
-	/* Position  w/Parallax Effect */
+	/* Position w/Parallax Effect */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -248,10 +248,10 @@ li a:focus,
 	text-shadow: 1px 1px 2px black;
 }
 
-.blue {
-	/* Photo Links */
+.accent {
+	/* Photo Links - RENAMED FROM .blue */
 	color: #FF4500;
-	/* RUNIC RED SWAP */
+	/* RUNIC RED SWAP COMPLETE */
 	text-decoration: none;
 	font-weight: bold;
 }
